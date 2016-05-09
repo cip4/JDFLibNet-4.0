@@ -43,6 +43,7 @@
     <Compile Include="AuditPool.cs" />
     <Compile Include="CustomerInfo.cs" />
     <Compile Include="JDF.cs" />
+    <Compile Include="JDFTypes.cs" />
     <Compile Include="NodeInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceLinkPool.cs" />
