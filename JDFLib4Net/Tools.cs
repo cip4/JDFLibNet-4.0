@@ -9,7 +9,11 @@ namespace JDFLib4Net
 {
     public class Tools
     {
-
+        /// <summary>
+        /// validate the string is a Double
+        /// </summary>
+        /// <param name="vle">string value</param>
+        /// <returns>double</returns>
         public static double ValidateDouble(string vle)
         {
             double result = 0;
