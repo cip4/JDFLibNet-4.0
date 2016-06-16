@@ -41,14 +41,23 @@
   <ItemGroup>
     <Compile Include="AncestorPool.cs" />
     <Compile Include="AuditPool.cs" />
+    <Compile Include="Comment_Type.cs" />
+    <Compile Include="Company.cs" />
     <Compile Include="CustomerInfo.cs" />
+    <Compile Include="HandlingAttribs.cs" />
     <Compile Include="JDF.cs" />
     <Compile Include="JDFTypes.cs" />
     <Compile Include="NodeInfo.cs" />
+    <Compile Include="PhysicalResourceAttribs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceAttribs.cs" />
     <Compile Include="ResourceLinkPool.cs" />
+    <Compile Include="ResourcePartAttribs.cs" />
     <Compile Include="ResourcePool.cs" />
+    <Compile Include="ResourceRef.cs" />
     <Compile Include="StatusPool.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="TypeRectangle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
