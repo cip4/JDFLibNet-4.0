@@ -107,7 +107,9 @@ namespace JDFLib4Net
         [XmlAnyAttribute]
         public XmlAttribute[] other { get; set; }
 
-        //Possible Elements
+        /*Possible Elements
+            JDF may or may not be correct will review at a later time
+         */
         [XmlElement(ElementName = "NodeInfo", IsNullable = true)]
         public NodeInfo NodeInfo { get { return _NodeInfo; } set { _NodeInfo = value; } }
         [XmlElement(ElementName = "JDF")]
