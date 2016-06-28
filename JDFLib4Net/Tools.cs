@@ -26,6 +26,12 @@ namespace JDFLib4Net
             return result;
         }
 
+        /// <summary>
+        /// Return Enum Value
+        /// </summary>
+        /// <param name="En">Enumuration</param>
+        /// <param name="value">Confirm Value</param>
+        /// <returns>string value</returns>
         public static string SetEnumValue(Type En, object value)
         {
             if (Enum.IsDefined(En, value))
@@ -34,6 +40,12 @@ namespace JDFLib4Net
                 return En.GetEnumValues().GetValue(0).ToString();
         }
 
+        /// <summary>
+        /// String value Match
+        /// </summary>
+        /// <param name="En">String Array</param>
+        /// <param name="value">Value to Confirm</param>
+        /// <returns>string value</returns>
         public static string ValidateString(string[] En, object value)
         {
             if (En.Contains(value))
@@ -42,7 +54,11 @@ namespace JDFLib4Net
                 return En[0].ToString();
         }
 
-
+        /// <summary>
+        /// Confirm String is a Convertable Bool Value
+        /// </summary>
+        /// <param name="vle">string to check</param>
+        /// <returns>bool based on string value</returns>
         public static bool SetBool(string vle)
         {
             string[] isFalse = { "0", "off", "no", "false" };
@@ -55,6 +71,11 @@ namespace JDFLib4Net
                 throw new ArgumentException("Unable to set Boolean Value.");
         }
 
+        /// <summary>
+        /// PDF path Validator
+        /// </summary>
+        /// <param name="value">string of PDF Path</param>
+        /// <returns>PDF Path</returns>
         public static string ValidatePDFPath(string value)
         {
             if (Regex.IsMatch(value, @"^((([+\-]?\d+(\.\d+)?\s){2}[ml]|([+\-]?\d+(\.\d+)?\s){6}c|([+\-]?\d+(\.\d+)?\s){4}([vy]|re)|h)(\s(([+\-]?\d+(\.\d+)?\s){2}[ml]|([+\-]?\d+(\.\d+)?\s){6}c|([+\-]?\d+(\.\d+)?\s){4}([vy]|re)|h))*)$", RegexOptions.IgnoreCase))
